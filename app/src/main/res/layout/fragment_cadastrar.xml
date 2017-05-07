@@ -1,0 +1,160 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.playjoa.telasiparty.cadastrarFragment"
+    android:background="#dedcdf">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|top"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Cadastro de Eventos"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Algo acontecendo em sua cidade? Deixe os amigos saberem"
+            android:id="@+id/textView3"
+            android:textSize="14dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp" />
+
+        <ImageButton
+            android:layout_width="280dp"
+            android:layout_height="80dp"
+            android:id="@+id/imgEvento"
+            android:background="@drawable/camera"
+            android:layout_weight="0.05"
+            android:layout_gravity="center"
+            android:clickable="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:id="@+id/imageView4" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:id="@+id/editText"
+            android:hint="Nome do Evento"
+            android:textSize="18dp"
+            android:textColorHint="#525053"
+            android:textColor="@android:color/black"
+            android:background="#d8d2dc"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:id="@+id/separador" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:id="@+id/editText2"
+            android:hint="Local"
+            android:textSize="18dp"
+            android:textColorHint="#525053"
+            android:textColor="@android:color/black"
+            android:background="#d8d2dc"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:id="@+id/imageView2" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data e Hora:"
+                android:id="@+id/textView4"
+                android:textSize="18dp"
+                android:textColorHint="#525053"
+                android:layout_marginLeft="5dp" />
+
+            <EditText
+                android:layout_width="90dp"
+                android:layout_height="38dp"
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/txtData"
+                android:textSize="18dp"
+                android:textColor="@android:color/black"
+                android:background="#d8d2dc" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imgCalendario"
+                android:background="@drawable/calendar" />
+
+            <EditText
+                android:layout_width="90dp"
+                android:layout_height="38dp"
+                android:inputType="time"
+                android:ems="10"
+                android:id="@+id/txtHora"
+                android:textSize="18dp"
+                android:textColor="@android:color/black"
+                android:background="#d8d2dc" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imgHora"
+                android:background="@drawable/clock" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:id="@+id/imageView3" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:id="@+id/editText3"
+            android:hint="Descricao"
+            android:layout_weight="0.34"
+            android:textSize="18dp"
+            android:textColorHint="#525053"
+            android:textColor="@android:color/black"
+            android:background="#d8d2dc"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+        <Button
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCadastrar"
+            android:layout_gravity="center"
+            android:background="#3c4045"
+            android:textColor="@android:color/white"
+            android:text="Cadastrar" />
+
+    </LinearLayout>
+
+</FrameLayout>

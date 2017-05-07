@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview1"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    card_view:cardElevation="3dp"
+    card_view:contentPadding="3dp"
+    card_view:cardCornerRadius="3dp"
+    card_view:cardMaxElevation="3dp">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cdll2">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/VollyNetworkImageView1"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="false"
+            style="@android:style/Animation.Toast"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/VollyNetworkImageView1"
+            android:id="@+id/cdll"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Nome Evento"
+                android:id="@+id/textView_item"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/VollyNetworkImageView1"
+                android:textSize="12dp"
+                android:textColor="#3c4045"
+                android:layout_marginLeft="7dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:layout_alignBottom="@+id/VollyNetworkImageView1"
+                android:layout_toEndOf="@+id/VollyNetworkImageView1"
+                android:layout_marginTop="25dp">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:id="@+id/imageView7"
+                    android:background="@drawable/calendar"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="3dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="12/12/2016"
+                    android:id="@+id/txtData"
+                    android:layout_marginLeft="3dp"
+                    android:textSize="10dp"
+                    android:textColor="#3c4045"
+                    android:textIsSelectable="false"
+                    android:background="#ffffff" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:id="@+id/imageView9"
+                    android:background="@drawable/clock"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="3dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="19:00PM"
+                    android:id="@+id/txtHora"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="#3c4045"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="   R$: "
+                    android:id="@+id/textView2"
+                    android:textColor="#3c4045"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="00,00"
+                    android:id="@+id/txtPrecoE"
+                    android:textColor="#3c4045"
+                    android:textSize="10dp" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:id="@+id/imageView10"
+                    android:background="@drawable/location"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="3dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="5km"
+                    android:id="@+id/txtDistancia"
+                    android:textColor="#3c4045"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="16dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="19:00PM"
+                    android:id="@+id/idEvento"
+                    android:layout_marginLeft="4dp"
+                    android:textColor="#000000"
+                    android:visibility="invisible" />
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progressBar" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

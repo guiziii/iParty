@@ -1,0 +1,241 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal|top">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:weightSum="1">
+
+
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnChoose1"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/image" />
+
+            <ImageView
+                android:layout_width="168dp"
+                android:layout_height="45dp"
+                android:id="@+id/imageView6"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/camera"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:layout_marginTop="15dp">
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/inputLayoutFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:id="@+id/txtNomeEvento"
+                    android:hint="Nome do Evento"
+                    android:textSize="18dp"
+                    android:textColorHint="#525053"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp" />
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputLayoutFullName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtEnderecoEvento"
+                android:hint="Endereço do Evento"
+                android:text="Avenida Andromeda, Sao Jose dos Campos"
+                android:layout_marginTop="10dp" />
+            </android.support.design.widget.TextInputLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:text="Preço:"
+                    android:textSize="18dp"
+                    android:layout_marginTop="15dp" />
+
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtpreco"
+                    android:hint="Preço"
+                    android:text="30,00"
+                    android:layout_gravity="right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:text="Data e Hora:"
+                    android:textSize="18dp" />
+
+
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtDataEvento"
+                    android:hint="Data do Evento"
+                    android:inputType="date"
+                    android:autoText="false"
+                    android:text="10/10/2016" />
+
+
+                <ImageView
+                    android:background="@drawable/clock"
+                    android:id="@+id/imageView5"
+                    android:layout_height="20dp"
+                    android:layout_width="20dp"
+                    android:layout_marginTop="10dp" />
+
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtHoraEvento"
+                    android:hint="Hora do Evento"
+                    android:inputType="time"
+                    android:text="20:30"
+                    android:layout_gravity="right" />
+
+            </LinearLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputLayoutFullName6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtDescricaoEvento"
+                android:layout_weight="0.43"
+                android:hint="Descrição do Evento"
+                android:text="Descrição"
+                android:layout_marginTop="10dp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputLayoutFullName7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtFaceEvento"
+                android:hint="Facebook do Evento"
+                android:text="Facebook"
+                android:layout_marginTop="10dp" />
+            </android.support.design.widget.TextInputLayout>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner3"
+                android:popupBackground="@color/hostcolor"
+                android:background="@drawable/roundcorner"
+                android:layout_marginTop="10dp" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner4"
+                android:popupBackground="@color/hostcolor"
+                android:background="@drawable/roundcorner"
+                android:layout_marginTop="20dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose"
+                android:id="@+id/btnChoose"
+                android:visibility="gone" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cadastrar Evento"
+                android:onClick="btnAlt"
+                android:id="@+id/btnCadEvento"
+                android:enabled="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/roundcorner6"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:id="@+id/lblID"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/lblLatitude"
+                android:textColor="#444343"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/lblLongitude"
+                android:textColor="#444343"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

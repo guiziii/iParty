@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview2"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    card_view:cardElevation="3dp"
+    card_view:contentPadding="3dp"
+    card_view:cardCornerRadius="3dp"
+    card_view:cardMaxElevation="3dp">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cdll3">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/cdll"
+            android:layout_alignParentBottom="true">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:layout_alignBottom="@+id/VollyNetworkImageView1"
+                android:layout_toEndOf="@+id/VollyNetworkImageView1"
+                android:layout_marginTop="25dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="29dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Nome Evento"
+                    android:id="@+id/txtEstadoLista"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/VollyNetworkImageView1"
+                    android:textSize="12dp"
+                    android:textColor="#3c4045"
+                    android:layout_marginLeft="7dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Small Text"
+                    android:id="@+id/txtIDEstado"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,118 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.playjoa.telasiparty.minhaConta"
+    android:background="#dedcdf">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/abc_action_bar_progress_bar_size">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/imgUser"
+            android:background="@drawable/user" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Nome Usuario"
+                    android:id="@+id/txtnomep"
+                    android:textSize="18dp" />
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageButton2"
+                    android:src="@android:drawable/ic_menu_edit" />
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:id="@+id/txtusuariop"
+                android:text="Usuario"
+                android:background="#d8d2dc" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:id="@+id/imageView5" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:id="@+id/txtemailp"
+                android:text="polengo@hotmail.com"
+                android:background="#d8d2dc" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:id="@+id/imageView6" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/txtsenhap"
+                android:text="Senha"
+                android:background="#d8d2dc" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="248dp"
+        android:layout_height="39dp"
+        android:text="Conectar com Facebook"
+        android:id="@+id/button"
+        android:layout_gravity="center"
+        android:background="#3b5998"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meus eventos"
+        android:id="@+id/btnMeuseventos"
+        android:layout_gravity="left|bottom"
+        android:layout_marginBottom="170dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sair"
+        android:id="@+id/btnMeusair"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="170dp" />
+
+</FrameLayout>
